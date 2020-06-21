@@ -8,6 +8,9 @@ import Features from "./components/Features/Features";
 import Sale from "./components/Sale/Sale";
 import Pricing from "./components/Pricing/Pricing";
 import Gallery from "./components/Gallery/Gallery";
+import Trainers from "./components/Trainers/Trainers";
+import Summer from "./components/Summer/Summer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
       <Sale />
       <Pricing />
       <Gallery />
+      <Trainers />
+      <Summer />
+      <Footer />
     </div >
   );
 }
