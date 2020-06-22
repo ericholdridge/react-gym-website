@@ -33,7 +33,47 @@ const styles = css`
     .container {
         padding: 150px 0;
         display: flex;
+        max-width: 1200px;
         justify-content: space-between;
+    }
+    @media (max-width: 769px) {
+        .heading {
+            max-width: 400px;
+        }
+        .container {
+            flex-direction: column;
+            .trainerCard {
+                margin: 0 auto;
+                .trainerBgImage {
+                    height: 500px;
+                    &:hover {
+                        .social {
+                            background: rgba(0, 0, 0, 0.5);
+                            height: 500px;
+                        }
+                    }
+                    .social {
+                        height: 480px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 770px) and (max-width: 980px) {
+        .container {
+            flex-wrap: wrap;
+            .trainerCard {
+                max-width: 45%;
+            }
+        }
+    }
+    @media (min-width: 981px) and (max-width: 1324px) {
+        .container {
+            flex-wrap: wrap;
+            .trainerCard {
+                max-width: 290px;
+            }
+        }
     }
 `;
 

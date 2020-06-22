@@ -72,6 +72,16 @@ const styles = css`
             height: 100%;
         }
     }
+    @media (max-width: 769px) {
+        .img1, .img2, .img3, .img4, .img5, .img6 { 
+            width: 100%;
+        } 
+    }
+    @media (min-width: 770px) and (max-width: 1002px) {
+        .img1, .img2, .img3, .img4, .img5, .img6 { 
+            width: 50%;
+        } 
+    }
 
 `
 

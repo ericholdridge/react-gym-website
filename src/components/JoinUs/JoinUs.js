@@ -55,6 +55,13 @@ const styles = css`
             }
         }
     }
+
+    @media(max-width: 990px) {
+        flex-direction: column;
+        .wrap {
+            width: 100%;
+        }
+    }
 `
 
 export default JoinUs;

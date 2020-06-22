@@ -29,11 +29,26 @@ const styles = css`
     background: #000;
     .container {
         padding: 150px 0;
+        max-width: 1200px;
         .featureWrapper {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             width: 100%;
             padding: 80px 0 0 0;
+        }
+    }
+
+    @media(max-width: 594px) {
+        .container {
+            .featureWrapper {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                .featureCard {
+                    margin: 40px 0 0 0;
+                }
+            }
         }
     }
 `;

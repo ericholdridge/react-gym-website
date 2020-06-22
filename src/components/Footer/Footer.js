@@ -52,6 +52,7 @@ const styles = css`
     background: #000;
     .container {
         padding: 150px 0;
+        max-width: 1200px;
         display: flex;
         border-bottom: 1px solid rgb(26, 26, 26);
         justify-content: space-between;
@@ -79,6 +80,11 @@ const styles = css`
                 i {
                     color: #ccc;
                     margin: 0 10px 0 0;
+                    cursor: pointer;
+                    transition: all 300ms ease-in-out;
+                    &:hover {
+                        color: red;
+                    }
                 }
             }
         }
@@ -131,6 +137,52 @@ const styles = css`
             text-align: center;
             i {
                 color: red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media(max-width: 700px) {
+        .container {
+            padding: 100px 0;
+            flex-wrap: wrap;
+            .footerCard {
+                max-width: 200px;
+                /* border: 1px solid green; */
+                &:nth-child(3) {
+                    max-width: 400px;
+                    padding: 30px 0 0 0;
+                }
+            }
+        }
+        .copyright {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 701px) and (max-width: 1000px) {
+        .container {
+            padding: 100px 0;
+            flex-wrap: wrap;
+            .footerCard {
+                max-width: 300px;
+                &:nth-child(3) {
+                    max-width: 400px;
+                    padding: 30px 0 0 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 1001px) and (max-width: 1200px) {
+        .container {
+            padding: 100px 0;
+            flex-wrap: wrap;
+            .footerCard {
+                max-width: 200px;
+                &:nth-child(3) {
+                    max-width: 400px;
+                    padding: 30px 0 0 0;
+                }
             }
         }
     }

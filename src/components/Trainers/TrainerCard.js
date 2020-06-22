@@ -22,7 +22,7 @@ const styles = css`
     max-width: 380px;
     text-align: center;
     .trainerBgImage {
-        width: 100%;
+        /* width: 100%; */
         height: 400px;
         display: flex;
         align-items: flex-end;

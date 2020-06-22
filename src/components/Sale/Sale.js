@@ -28,6 +28,7 @@ const styles = css`
     .container {
         padding: 200px 0;
         display: flex;
+        max-width: 1200px;
         justify-content: flex-end;
         .wrapper {
             h3 {
